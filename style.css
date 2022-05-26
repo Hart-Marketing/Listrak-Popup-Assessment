@@ -1,0 +1,572 @@
+:root {
+
+    /* Colors: */
+    --light-red: #FF4B4B;
+    --off-white: #E9E9E9;
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray: #464646;
+    --pink: #FD8C94;
+    --light-gray: rgba(233, 233, 233, 1);
+    /* Font/text values */
+
+    --font-family-prata: Prata;
+    --font-family-pt-sans: PT Sans;
+
+    --font-style-normal: normal;
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+
+    --font-size-15: 15px;
+    --font-size-28: 28px;
+    --font-size-65: 65px; 
+    --font-size-68: 68px;
+    --font-size-82: 82px;
+    --font-size-167: 167px;
+
+    --character-spacing-minus-26: -26px;
+    --character-spacing-minus-4-34: -4.34px;
+    --character-spacing-3: 3px;
+    --character-spacing-5-44: 5.44px;
+    --character-spacing-6-56: 6.56px;
+    --character-spacing-13: 13px;
+    --character-spacing-80: 80px;
+    --character-spacing-200: 200px;
+
+    --line-spacing-16: 16px;
+    --line-spacing-40: 40px;
+    --line-spacing-78: 78px;
+    --line-spacing-85: 85px;
+    --line-spacing-117: 117px;
+    --line-spacing-239: 239px;
+}
+/* Global CSS */
+a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  input[type=text], select, textarea  {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: text;
+}
+
+/* Get Your Style On */
+.font-style-1 {
+    font: normal normal normal 65px/85px Prata;
+    letter-spacing: 13px;
+    color: rgba(70, 70, 70, 1);
+}
+/* Ampersand */
+.font-style-2 {
+    font: normal normal normal 65px/85px Prata;
+    letter-spacing: 13px;
+    color: rgba(253, 140, 148, 1);
+}
+/* Large "20" */
+.font-style-3 {
+    font: normal normal normal 167px/239px Prata;
+    letter-spacing: -4.34px;
+    color: rgba(70, 70, 70, 1);
+}
+/* % Symbol */
+.font-style-4 {
+    font: normal normal normal 82px/117px Prata;
+    letter-spacing: 6.56px;
+    color: #464646;
+}
+/* OFF */
+.font-style-5 {
+    font: normal normal normal 28px/40px Prata;
+    letter-spacing: 2.24px;
+    color: #464646;
+}
+/* Email Address */
+.font-style-6 {
+    font: normal normal bold 15px/16px PT Sans;
+    letter-spacing: 3px;
+    color: #464646;
+}
+/* Sign Up */
+.font-style-7 {
+    text-align: left;
+    font: normal normal bold 15px/16px PT Sans;
+    letter-spacing: 3px;
+    color: #FD8C94;
+}
+
+/*Elements and Containers*/
+.chrome-nav-bar {
+    /* Layout Properties */
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 80px;
+
+    /* UI Properties */
+    background: transparent url('img/Browser - Desktop.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.page-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Layout Properties */
+    top: 80px;
+    left: 0px;
+    width: 1366px;
+    height: 688px;
+
+    /* UI Properties */
+    background: rgba(0, 0, 0, 0.4) 0% 0% no-repeat padding-box; 
+}
+.white-rect-background{
+    /* Layout Properties */
+    top: 174px;
+    left: 344px;
+    width: 680px;
+    height: 500px;
+    /* UI Properties */
+    background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.group-container{
+    /* Layout Properties */
+    top: 174px;
+    left: 344px;
+    width: 680px;
+    height: 501px;
+    /* UI Properties */
+    background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+    mix-blend-mode: normal;
+}
+.text-container{
+    position: absolute;
+    text-align: left;
+}
+.input-container{
+    position: absolute;
+    text-align: left;
+    z-index: 10;
+}
+.object-container{
+    position: absolute;
+    align-items: center;
+}
+.vertical-container{
+    position: relative;
+    align-items: center;
+}
+/*Specific boundaries for each text element */
+.get-your-style-on{
+    top: 212px;
+    left: 434px;
+    width: 208px;
+    height: 344px;
+}
+.ampersand{
+    top: 341px;
+    left: 642px;
+    width: 53px;
+    height: 89px;
+}
+.large-20{
+    top: 200px;
+    left: 690px;
+    width: 214px;
+    height: 226px;
+}
+.percent{  
+    top: 291px;
+    left: 911px;
+    width: 68px;
+    height: 111px;
+}
+.off{
+    top: 411px;
+    left: 910px;
+    width: 66px;
+    height: 38px;
+}
+.email-address{
+    top: 527px;
+    left: 684px;
+    width: 175px;
+    height: 19px;
+}
+.sign-up{
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    top: 518px;
+    left: 888px;
+    width: 90px;
+    height: 19px;
+}
+.email-address-border{
+    /* Layout Properties */
+    top: 559px;
+    left: 686px;
+    width: 180px;
+    height: 0px;
+    /* UI Properties */
+    border: 2px solid rgba(70, 70, 70, 1);
+    opacity: 1;
+}
+.sign-up-border{
+    /* Layout Properties */
+    top: 559px;
+    left: 876px;
+    width: 93px;
+    height: 0px;
+    /* UI Properties */
+    border: 2px solid rgba(253, 140, 148, 1);
+    opacity: 1;
+}
+.placeholder-box {
+    position: absolute;
+    display: block;
+    top: 518px;
+    left: 876px;
+    width: 90px;
+    height: 19px;
+    border: 1px solid white;
+    border-radius: 2px;
+    box-sizing: border-box;
+    z-index: 10;
+} 
+.button {
+    cursor: pointer;
+    display: block;
+    top: 518px;
+    left: 888px;
+    width: 90px;
+    height: 19px;
+    border-radius: 0px;
+    background: white;
+    color:white;
+    border:white;
+    border-width: 0 10px;
+    border-radius: 0;
+    z-index: 10;
+}
+.vertical-line-1{
+    /* Layout Properties */
+    top: 260px;
+    left: 664px;
+    width: 0px;
+    height: 98px;
+    /* UI Properties */
+    border: 1px solid rgba(233, 233, 233, 1);
+}
+.vertical-line-2{
+    /* Layout Properties */
+    top: 493px;
+    left: 664px;
+    width: 0px;
+    height: 98px;
+    /* UI Properties */
+    border: 1px solid rgba(233, 233, 233, 1);
+}
+.vertical-line-3{
+    /* Layout Properties */
+    position:relative;
+    top: 0px;
+    left: 50px;
+    width: 0px;
+    height: 91px;
+    /* UI Properties */
+    border: 1px solid rgba(253, 140, 148, 0.6);
+}
+.vertical-line-4{
+    /* Layout Properties */
+    position:relative;
+    top: 315px;
+    left: 50px;
+    width: 0px;
+    height: 91px;
+    /* UI Properties */
+    border: 1px solid rgba(253, 140, 148, 0.6);
+}
+.vertical-line-5{
+    /* Layout Properties */
+    position:relative;
+    top: -93px;
+    left: 50px;
+    width: 0px;
+    height: 318px;
+    /* UI Properties */
+    border: 1px solid rgba(233, 233, 233, 1);
+}
+/* My take on the X at the top right of the window */
+
+
+.close-popup-button{
+    position:absolute;
+    top: 187px;
+    left: 970px;
+    width:32px;
+    height:32px;
+    background-color:var(--white);
+    opacity: 1;
+}
+.close-popup-button:before,.close-popup-button:after{
+    content:'';
+    position:absolute;
+    width:28px;
+    height:3px;
+    background-color:var(--off-white);
+    top: 25px;
+}
+.close-popup-button:before{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    left:2px;
+}
+.close-popup-button:after{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    right:2px;
+}
+
+/* Changes to Elements for Mobile Pages*/
+@media screen and (max-width: 750px) {
+    input[type=text], select, textarea  {
+        text-align: center;
+    }
+    .font-style-1 {
+        font: normal normal normal 45px/59px Prata;
+        letter-spacing: 9px;
+        color: rgba(70, 70, 70, 1);
+    }
+    /* Ampersand */
+    .font-style-2 {
+        font: normal normal normal 65px/85px Prata;
+        letter-spacing: 13px;
+        color: rgba(253, 140, 148, 1);
+    }
+    /* Large "20" */
+    .font-style-3 {
+        font: normal normal normal 144px/206px Prata;
+        letter-spacing: -3.74px;
+        color: rgba(70, 70, 70, 1);
+    }
+    /* % Symbol */
+    .font-style-4 {
+        font: normal normal normal 70px/100px Prata;
+        letter-spacing: 5.6px;
+        color: rgba(70, 70, 70, 1);
+    }
+    /* OFF */
+    .font-style-5 {
+        font: normal normal normal 23px/33px Prata;
+        letter-spacing: 1.84px;
+        color: rgba(70, 70, 70, 1);
+    }
+    /* Email Address */
+    .font-style-6 {
+        font: normal normal bold 15px/16px PT Sans;
+        letter-spacing: 3px;
+        color: #464646;
+    }
+    /* Sign Up */
+    .font-style-7 {
+        text-align: left;
+        font: normal normal bold 15px/16px PT Sans;
+        letter-spacing: 3px;
+        color: #FD8C94;
+    }  
+    .chrome-nav-bar {
+        /* Layout Properties */
+        top: 0px;
+        left: 0px;
+        width: 375px;
+        height: 59px;
+        /* UI Properties */
+        background: transparent url('img/Browser - Mobile.png') 0% 0% no-repeat padding-box;
+    }
+    .page-background {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 59px;
+        left: 0px;
+        width: 375px;
+        height: 608px;
+        /* UI Properties */
+        background: rgba(0, 0, 0, 0.4) 0% 0% no-repeat padding-box; 
+    }
+    .white-rect-background{
+        top: 90px;
+        left: 13px;
+        width: 350px;
+        height: 546px;
+        /* UI Properties */
+        background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    .group-container{
+        /* Layout Properties */
+        top: 90px;
+        left: 13px;
+        width: 350px;
+        height: 546px;
+        /* UI Properties */
+        mix-blend-mode: normal;
+    }
+    .text-container{
+        position:absolute;
+        text-align: left;
+    }
+    .input-container{
+        position: absolute;
+        text-align: center;
+    }
+    .object-container{
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+    .vertical-container{
+        position: relative;
+        align-items: center;
+    }
+    .link-container{
+        position: absolute;
+    }
+    /* Get Your Style On */
+    .get-your-style-on{
+    top: 109px;
+    left: 64px;
+    width: 270px;
+    height: 120px;
+    }
+    .ampersand{
+        top: 215px;
+        left: 163px;
+        width: 53px;
+        height: 89px;
+    }
+    .large-20{
+        top: 218px;
+        left: 63px;
+        width: 185px;
+        height: 195px;
+    }
+    .percent{  
+        top: 300px;
+        left: 255px;
+        width: 58px;
+        height: 95px;
+    }
+    .off{
+        top: 403px;
+        left: 254px;
+        width: 54px;
+        height: 31px;
+    }
+    .email-address{
+        top: 485px;
+        left: 28px;
+        width: 320px;
+        height: 19px;
+    }
+    .email-address-border{
+        top: 518px;
+        left: 28px;
+        width: 320px;
+        height: 0px;
+        border: 2px solid rgba(70, 70, 70, 1);
+    }
+    .sign-up{
+        display: none;
+    }
+    .sign-up-border{
+        display: none;
+    }
+    .placeholder-box {
+        position: absolute;
+        display: block;
+        top: 548px;
+        left: 28px;
+        width: 320px;
+        height: 55px;
+        border: 1px solid rgba(253, 140, 148, 1);
+        border-radius: 2px;
+        box-sizing: border-box;
+    } 
+    .button {
+        display: block;
+        top: 548px;
+        left: 28px;
+        width: 315px;
+        height: 53px;
+        border-radius: 0px;
+        background: white;
+        color:white;
+        border:white;
+        border-width: 0 10px;
+        border-radius: 0;
+    }
+    .placeholder-box p {
+        text-align: center;
+    }
+    .vertical-line-1{
+        /* Layout Properties */
+        top: 294px;
+        left: 65px;
+        width: 90px;
+        height: 0px;
+        /* UI Properties */
+        border: 1px solid rgba(233, 233, 233, 1);
+    }
+
+    .vertical-line-2{
+        /* Layout Properties */
+        top: 294px;
+        left: 222px;
+        width: 90px;
+        height: 0px;
+        /* UI Properties */
+        border: 1px solid rgba(233, 233, 233, 1);
+    }
+    /* My custom workaround for the "X" Button */
+    .close-popup-button{
+        top: 0px;
+        left: 306px;
+        width:32px;
+        height:32px;
+        position:relative;
+        background-color:var(--white);
+        opacity: 1;
+    }
+    .close-popup-button:before,.close-popup-button:after{
+        content:'';
+        position:absolute;
+        width:28px;
+        height:2px;
+        background-color:var(--off-white);
+        top: 25px;
+    }
+    .close-popup-button:before{
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        transform:rotate(45deg);
+        left:2px;
+    }
+    .close-popup-button:after{
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+        right:2px;
+    }
+    .vertical-line-3, .vertical-line-4, .vertical-line-5{
+        display: none;
+    }
+}
